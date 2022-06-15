@@ -1,13 +1,5 @@
 $.getJSON('../data.json', function(data) {
 
-    $('span').eq(0).css('height', '2.5em');
-    $('span').eq(1).css('height', '4.5em');
-    $('span').eq(2).css('height', '7.5em');
-    $('span').eq(3).css('height', '4.5em');
-    $('span').eq(4).css('height', '3em');
-    $('span').eq(5).css('height', '6.5em');
-    $('span').eq(6).css('height', '3.5em');
-
     $('#mon').on('mouseover', () => {
         $('#txtMon').html(`<p class="hover">$`+ data[0].amount +`</p>`);
         $('#mon').css('background-color', 'hsla(10, 79%, 65%, .7)');

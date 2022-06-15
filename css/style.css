@@ -97,6 +97,33 @@ header .text p {
     cursor: pointer;
 }
 
+.utama .img .day .mon {
+    height: 2.5em;
+}
+
+.utama .img .day .tue {
+    height: 5em;
+}
+
+.utama .img .day .wed {
+    height: 7.5em;
+}
+
+.utama .img .day .thu {
+    height: 4.5em;
+}
+
+.utama .img .day .fri {
+    height: 3em;
+}
+
+.utama .img .day .sat {
+    height: 6.5em;
+}
+
+.utama .img .day .sun {
+    height: 3.5em;
+}
 
 .utama .img .day p.hover {
     color: var(--three-Color);
