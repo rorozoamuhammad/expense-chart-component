@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+:root {
+    --primary-Color: hsl(10, 79%, 65%);
+    --secondary-Color: hsl(186, 34%, 60%);
+    --three-Color: hsl(33, 100%, 98%);
+    --heading: hsl(25, 47%, 15%);
+    --text: hsl(28, 10%, 53%);
+    --bg: hsl(27, 66%, 92%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10vh;
+    background-color: var(--primary-Color);
+    border-radius: 20px;
+    width: 35%;
+    padding: .5em 1em;
+    color: var(--three-Color);
+    line-height: 1em;
+}
+
+header .text h1 {
+    font-weight: 700;
+}
+
+header .text p {
+    font-weight: 400;
+}
+
+.utama {
+    width: 35%;
+    background-color: var(--three-Color);
+    padding: .5em 1em;
+    margin: 1em auto;
+    border-radius: 15px;
+}
+
+.utama h1 {
+    color: var(--heading);
+    font-weight: 700;
+}
+
+.utama .img {
+    width: 100%;
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    border-bottom: 2px solid var(--bg);
+    padding: 1em 0;
+    color: var(--text);
+    font-weight: 400;
+    height: 38vh;
+}
+
+.utama .img .day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.utama .img .day span.wed {
+    background-color: var(--secondary-Color);
+}
+
+.utama .img .day span {
+    background-color: var(--primary-Color);
+    width: 70%;
+    border-radius: 5px;
+    display: block;
+    cursor: pointer;
+}
+
+
+.utama .img .day p.hover {
+    color: var(--three-Color);
+    background-color: var(--heading);
+    font-size: .7em;
+    padding: .5em;
+    border-radius: 5px;
+}
+
+.utama .ket {
+    display: flex;
+    justify-content: space-between;
+}
+
+.utama .ket p {
+    color: var(--text);
+    font-weight: 400;
+}
+
+.utama .ket .first {
+    line-height: .1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.utama .ket .first h1 {
+    font-size: 2.7em;
+    font-weight: 700;
+    margin-top: .5em;
+}
+
+.utama .ket .second {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    line-height: .1em;
+}
+
+.utama .ket .second p:nth-child(1) {
+    color: var(--heading);
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 576px) {
+    header {
+        width: 80%;
+        padding: .5em 1em;
+    }
+
+    header h1 {
+        font-size: 1.6em;
+    }
+
+    .utama {
+        width: 80%;
+        padding: .5em 1em;
+    }
+
+    .utama h1 {
+        font-size: 1.3em;
+    }
+
+    .utama .img {
+        margin-bottom: 1em;
+    }
+
+    .utama .img .day span {
+        width: 85%;
+    }
+
+    .utama .img .day p.hover {
+        font-size: .5em;
+    }
+
+    .utama .ket .first p {
+        font-size: .8em;
+    }
+
+    .utama .ket .first h1 {
+        font-size: 1.5em;
+    }
+
+    .utama .ket .second p:nth-child(2) {
+        font-size: .8em;
+    }
+}
