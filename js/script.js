@@ -1,65 +1,65 @@
 $.getJSON('../data.json', function(data) {
 
     $('#mon').on('mouseover', () => {
-        $('#txtMon').html(`<p class="hover">$`+ data[0].amount +`</p>`);
+        $('#txtMon').append(`<p class="hover">$`+ data[0].amount +`</p>`);
         $('#mon').css('background-color', 'hsla(10, 79%, 65%, .7)');
     });
-    $('.day #mon').on('mouseleave', () => {
-        $('#mon').css('background-color', 'hsl(10, 79%, 65%)');
+    $('#mon').on('mouseleave', () => {
         $('#txtMon').html(``);
+        $('#mon').css('background-color', 'hsl(10, 79%, 65%)');
     });
 
     $('#tue').on('mouseover', () => {
-        $('#txtTue').html(`<p class="hover">$`+ data[1].amount +`</p>`);
+        $('#txtTue').append(`<p class="hover">$`+ data[1].amount +`</p>`);;
         $('#tue').css('background-color', 'hsla(10, 79%, 65%, .7)');
     });
     $('#tue').on('mouseleave', () => {
-        $('#tue').css('background-color', 'hsl(10, 79%, 65%)');
         $('#txtTue').html(``);
+        $('#tue').css('background-color', 'hsl(10, 79%, 65%)');
     });
 
     $('#wed').on('mouseover', () => {
-        $('#txtWed').html(`<p class="hover">$`+ data[2].amount +`</p>`);
+        $('#txtWed').append(`<p class="hover">$`+ data[2].amount +`</p>`);;
         $('#wed').css('background-color', 'hsla(186, 34%, 60%, .7)');
     });
     $('#wed').on('mouseleave', () => {
-        $('#wed').css('background-color', 'hsl(186, 34%, 60%)');
         $('#txtWed').html(``);
+        $('#wed').css('background-color', 'hsl(186, 34%, 60%)');
     });
 
     $('#thu').on('mouseover', () => {
-        $('#txtThu').html(`<p class="hover">$`+ data[3].amount +`</p>`);
+        $('#txtThu').append(`<p class="hover">$`+ data[3].amount +`</p>`);;
         $('#thu').css('background-color', 'hsla(10, 79%, 65%, .7)');
     });
     $('#thu').on('mouseleave', () => {
-        $('#thu').css('background-color', 'hsl(10, 79%, 65%)');
         $('#txtThu').html(``);
+        $('#thu').css('background-color', 'hsl(10, 79%, 65%)');
     });
 
     $('#fri').on('mouseover', () => {
-        $('#txtFri').html(`<p class="hover">$`+ data[4].amount +`</p>`);
+        $('#txtFri').append(`<p class="hover">$`+ data[4].amount +`</p>`);;
         $('#fri').css('background-color', 'hsla(10, 79%, 65%, .7)');
     });
     $('#fri').on('mouseleave', () => {
-        $('#fri').css('background-color', 'hsl(10, 79%, 65%)');
         $('#txtFri').html(``);
+        $('#fri').css('background-color', 'hsl(10, 79%, 65%)');
     });
 
     $('#sat').on('mouseover', () => {
-        $('#txtSat').html(`<p class="hover">$`+ data[5].amount +`</p>`);
+        $('#txtSat').append(`<p class="hover">$`+ data[5].amount +`</p>`);;
         $('#sat').css('background-color', 'hsla(10, 79%, 65%, .7)');
     });
     $('#sat').on('mouseleave', () => {
-        $('#sat').css('background-color', 'hsl(10, 79%, 65%)');
         $('#txtSat').html(``);
+        $('#sat').css('background-color', 'hsl(10, 79%, 65%)');
     });
 
     $('#sun').on('mouseover', () => {
-        $('#txtSun').html(`<p class="hover">$`+ data[6].amount +`</p>`);
+        $('#txtSun').append(`<p class="hover">$`+ data[6].amount +`</p>`);;
         $('#sun').css('background-color', 'hsla(10, 79%, 65%, .7)');
     });
     $('#sun').on('mouseleave', () => {
-        $('#sun').css('background-color', 'hsl(10, 79%, 65%)');
         $('#txtSun').html(``);
+        $('#sun').css('background-color', 'hsl(10, 79%, 65%)');
     });
 });
