@@ -1,4 +1,4 @@
-$.getJSON('../data.json', function(data) {
+$.getJSON('data.json', function(data) {
 
     $('#mon').on('mouseover', () => {
         $('#txtMon').append(`<p class="hover">$`+ data[0].amount +`</p>`);
